@@ -1,0 +1,64 @@
+class Student:
+
+    def __init__(self,name,roll_no,student_class,address):
+        self.name = name
+        self.roll_no = roll_no
+        self.student_class = student_class
+        self.address = address
+
+
+students = []
+
+while True:
+
+    print("========Student Management System=========")
+    print("1. Add Student  ")
+    print("2. View Student ")
+    print("3. Search Student")
+    print("4. Update Student")
+    print("5. Delete Student ")
+    print("6. Exit")
+
+    choice = input("Enter Your Choice : ")
+
+# add student
+
+    if choice == "1":
+
+        name = input("Enter Student Name => ")
+        roll_no = input("Enter Roll No => ")
+        student_class = int(input("Enter Student Class => "))
+        address = input("Enter Student Address => ")
+
+        found = False
+        
+        for student in students:
+            if student.roll_no == roll_no:
+                found = True
+                break
+
+        if found:
+            print("❌Roll No already exists ")
+        else:        
+            student = Student(name,roll_no,student_class,address)
+            students.append(student)
+            print("✅Student Added Successfuly  ")
+
+#view student
+
+    elif choice == "2":
+
+        if len(students) == 0:
+            print("No Student Found")
+        else:
+            for student in students:
+                print(f"Name : {student.name}")
+                print(f"Roll No : {student.roll_no}")
+                print(f"Class : {student.student_class}")
+                print(f"Address : {student.address}")
+
+    elif choice == "6":
+        break
+
+    else: 
+        print("Invalid Choice ,Try again !")            
