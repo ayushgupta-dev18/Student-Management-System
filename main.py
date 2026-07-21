@@ -20,6 +20,7 @@ while True:
     print("6. Exit")
 
     choice = input("Enter Your Choice : ")
+    print("\n")
 
 # add student
 
@@ -49,16 +50,35 @@ while True:
     elif choice == "2":
 
         if len(students) == 0:
-            print("No Student Found")
+            print("No Student Exists")
         else:
             for student in students:
+                print("========STUDENT DETAILS=========")
                 print(f"Name : {student.name}")
                 print(f"Roll No : {student.roll_no}")
                 print(f"Class : {student.student_class}")
                 print(f"Address : {student.address}")
 
+#  search student
+    elif choice == "3":
+        roll_no = input("Enter the Student Roll  No : ")
+ 
+        for student in students:
+            if student.roll_no == roll_no:
+            
+                print("Student Found")
+                print(f"Name : {student.name}")
+                print(f"Roll No : {student.roll_no}")
+                print(f"Class : {student.student_class}")
+                print(f"Address : {student.address}")
+                break
+            
+        else:
+            print("No Student Found")
+    
+    
     elif choice == "6":
         break
-
+    
     else: 
         print("Invalid Choice ,Try again !")            

@@ -1,14 +1,15 @@
 # 🎓 Student Management System
 
-A beginner-friendly Python project built using Object-Oriented Programming (OOP). This project helps manage student records through a simple menu-driven interface.
+A beginner-friendly Python project built using Object-Oriented Programming (OOP). This project helps manage student records through a simple menu-driven interface
 
 ## 🚀 Features
 
-- Add Student
-- View All Students
-- Prevent Duplicate Roll Numbers
-- Menu-Driven Interface
-- Object-Oriented Design
+- ✅ Add Student
+- ✅ View All Students
+- ✅ Search Student by Roll Number
+- ✅ Prevent Duplicate Roll Numbers
+- ✅ Menu-Driven Interface
+- ✅ Object-Oriented Programming (OOP)
 
 ## 🛠️ Technologies Used
 
@@ -36,7 +37,6 @@ student-management-system/
 
 ## 🔄 Upcoming Features
 
-- Search Student
 - Update Student
 - Delete Student
 - Input Validation
@@ -64,6 +64,15 @@ python main.py
 5. Delete Student
 6. Exit
 ```
+## 📈 Project Progress
+
+### Version 1.0
+- Add Student
+- View Student
+- Duplicate Roll Number Validation
+
+### Version 1.1
+- Search Student by Roll Number
 
 ## 🎯 Learning Outcome
 
