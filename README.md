@@ -7,6 +7,7 @@ A beginner-friendly Python project built using Object-Oriented Programming (OOP)
 - ✅ Add Student
 - ✅ View All Students
 - ✅ Search Student by Roll Number
+- ✅ Update Student by Roll Number
 - ✅ Prevent Duplicate Roll Numbers
 - ✅ Menu-Driven Interface
 - ✅ Object-Oriented Programming (OOP)
@@ -37,7 +38,6 @@ student-management-system/
 
 ## 🔄 Upcoming Features
 
-- Update Student
 - Delete Student
 - Input Validation
 - File Handling (JSON)
@@ -73,6 +73,10 @@ python main.py
 
 ### Version 1.1
 - Search Student by Roll Number
+
+
+### Version 1.2
+- Update Student by Roll Number
 
 ## 🎯 Learning Outcome
 
