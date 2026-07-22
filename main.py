@@ -76,7 +76,23 @@ while True:
         else:
             print("No Student Found")
     
-    
+#  Update Student 
+    elif choice == "4":
+        roll_no = input("Enter Roll No : ")
+
+        for student in students :
+            if student.roll_no == roll_no:
+
+                student.name = input ("Enter new Name : ")
+                student.student_class = input("Enter new Class : ")
+                student.address = input("Enter new Address : ")
+                
+                print("Student Updated Successfully ")
+
+                break
+        else: 
+            print("No Student Found")
+
     elif choice == "6":
         break
     
