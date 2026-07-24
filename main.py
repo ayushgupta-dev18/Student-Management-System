@@ -93,8 +93,24 @@ while True:
         else: 
             print("No Student Found")
 
+# Delete student
+    elif choice == "5":
+        roll_no = input("Enter Roll No : ")
+
+        for student in students:
+            if student.roll_no == roll_no:
+
+                students.remove(student)
+                print("Student Deleted Successfully ")
+                break
+
+        else:
+            print("No Student found")
+
+
+
     elif choice == "6":
         break
     
     else: 
-        print("Invalid Choice ,Try again !")            
+        print("Invalid Choice ,Try again !")                
